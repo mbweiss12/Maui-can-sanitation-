@@ -147,6 +147,6 @@ window.addEventListener('load', function() {
     const currentYear = new Date().getFullYear();
     const footerText = document.querySelector('.footer-bottom p');
     if (footerText) {
-        footerText.textContent = footerText.textContent.replace('2024', currentYear);
+        footerText.textContent = footerText.textContent.replace(/\d{4}/, currentYear);
     }
 });
